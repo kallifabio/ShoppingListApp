@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196891417001",
+    "project_id": "shoppinglist-6b74c",
+    "storage_bucket": "shoppinglist-6b74c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196891417001:android:a6481b682f94b86a78ccb8",
+        "android_client_info": {
+          "package_name": "de.kallifabio.shoppinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196891417001-bk7p17rejujjc1c6l4dj20on548o8lrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQiBZTxdSgRWs8AzxI5ytlzKvf4UiRFsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196891417001-bk7p17rejujjc1c6l4dj20on548o8lrj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Artikelname"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Artikelname hier eintragen"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beschreibung (Optional)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Artikelbeschreibung hier eintragen"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvDropdownList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Einkaufliste auswählen:"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/dropdownList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnSubmitItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artikel hinzufügen" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Abbrechen" />
+
+</LinearLayout>
