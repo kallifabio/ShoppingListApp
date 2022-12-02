@@ -1,11 +1,9 @@
 <?php
-require "reader.php";
+require "mainreader.php";
+
 $name = $_POST["name"];
 $user_name = $_POST["user_name"];
 $password = $_POST["password"];
-//$name = "shaharil";
-//$user_name = "shah";
-//$password = "1234";
 
 $mysqli_query = "INSERT INTO ShoppingAccount VALUES (NULL,'$name','$user_name','$password');";
 

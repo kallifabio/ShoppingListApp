@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,8 +37,8 @@ public class AddItemActivity extends AppCompatActivity implements View.OnClickLi
         btnSubmitItem.setOnClickListener(this);
         btnCancel.setOnClickListener(this);
 
-        String[] dropdownItems = new String[]{MainActivity.getListList().toString()}; //später hier die ganzen Listen (Einkaufslisten), die erstellt und abgespeichert wurden, übergeben
-        arrayAdapterDropdown = new ArrayAdapter(AddItemActivity.this, android.R.layout.simple_spinner_dropdown_item, dropdownItems);
+        //String[] dropdownItems = new String[]{MainActivity.getListList().toString()}; //später hier die ganzen Listen (Einkaufslisten), die erstellt und abgespeichert wurden, übergeben
+        //arrayAdapterDropdown = new ArrayAdapter(AddItemActivity.this, android.R.layout.simple_spinner_dropdown_item, dropdownItems);
         dropdownList.setAdapter(arrayAdapterDropdown);
 
     }
@@ -48,7 +47,7 @@ public class AddItemActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnSubmitItem:
-                if (etItemName.getText().toString().trim().isEmpty() || MainActivity.getListList().isEmpty() || etItemName.getText().toString().trim().isEmpty() && MainActivity.getListList().isEmpty()) {
+                /*if (etItemName.getText().toString().trim().isEmpty() || MainActivity.getListList().isEmpty() || etItemName.getText().toString().trim().isEmpty() && MainActivity.getListList().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Artikel und Liste wurde nicht angegeben", Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(AddItemActivity.this, MainActivity.class);
@@ -58,7 +57,7 @@ public class AddItemActivity extends AppCompatActivity implements View.OnClickLi
                     ItemListActivity.getListItem().add(etItemName.getText().toString().trim());
                     ItemListActivity.getListDescription().add(etItemDescription.getText().toString().trim());
                     ItemListActivity.getArrayAdapterItem().notifyDataSetChanged();
-                }
+                }*/
                 break;
             case R.id.btnCancel:
                 Intent intent = new Intent(AddItemActivity.this, MainActivity.class);

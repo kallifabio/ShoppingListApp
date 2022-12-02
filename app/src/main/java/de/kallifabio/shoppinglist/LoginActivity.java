@@ -8,8 +8,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import de.kallifabio.shoppinglist.java_files.SaveDataBackground;
-
 public class LoginActivity extends AppCompatActivity {
 
     EditText nameRegister;
@@ -41,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 String name = nameRegister.getText().toString();
                 String username = usernameRegister.getText().toString();
                 String password = passwordRegister.getText().toString();
-                String url = "https://familienfotoswebsite.de/Home/insertData.php";
+                String url = "https://familienfotoswebsite.de/Home/insertAccountData.php";
                 String type = "register";
                 SaveDataBackground backgroundWorker = new SaveDataBackground(LoginActivity.this);
                 backgroundWorker.execute(url, type, name, username, password);
@@ -54,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 String name = nameRegister.getText().toString();
                 String username = usernameLogin.getText().toString();
                 String password = passwordLogin.getText().toString();
-                String url = "https://familienfotoswebsite.de/Home/readData.php";
+                String url = "https://familienfotoswebsite.de/Home/readAccountData.php";
                 String type = "login";
                 SaveDataBackground backgroundWorker = new SaveDataBackground(LoginActivity.this);
                 backgroundWorker.execute(url, type, name, username, password);
